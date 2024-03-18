@@ -1,6 +1,6 @@
 # Tableside: Postgres Backend
 
-The custom postgres `docker` image that sets up the users and databases necessary for the project.
+The custom postgres `Docker` image that sets up the users and databases necessary for the project.
 
 ## Setup
 

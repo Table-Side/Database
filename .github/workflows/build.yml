@@ -16,7 +16,7 @@ jobs:
         run: docker build . -t tableside/database:latest
 
       - name: Run Docker image with sample environment variables
-        run: source sample.env && docker run -e POSTGRES_USER="$POSTGRES_ROOT_USER" -e POSTGRES_PASSWORD="$POSTGRES_ROOT_PASSWORD" -v ./sample.env:/database/.env --name test-container tableside/database:latest
+        run: source sample.env && docker run -e POSTGRES_USER="$POSTGRES_USER" -e POSTGRES_PASSWORD="$POSTGRES_PASSWORD" -v ./sample.env:/database/.env --name test-container tableside/database:latest
 
       - name: Check Docker container status
         run: |

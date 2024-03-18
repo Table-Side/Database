@@ -4,7 +4,7 @@
 set -e
 
 # Load environment variables.
-source ~/database/.env
+source .env
 
 echo "Creating user accounts..."
 

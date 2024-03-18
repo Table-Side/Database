@@ -1,7 +1,8 @@
 FROM postgres:16 AS database
 
 # Copy .env file
-COPY /.env  /docker-entrypoint-initdb.d/.env
+COPY .env  /docker-entrypoint-initdb.d/.env
+COPY .env  /.env
 
 # Set workdir
 WORKDIR /database

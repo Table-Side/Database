@@ -4,7 +4,7 @@
 set -e
 
 # Load environment variables.
-source ./.env
+source ~/database/.env
 
 echo "Creating databases..."
 
